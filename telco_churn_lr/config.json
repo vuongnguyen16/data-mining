@@ -1,0 +1,26 @@
+{
+  "random_state": 42,
+  "test_size": 0.2,
+  "cv": {
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42
+  },
+  "model": {
+    "algorithm": "LogisticRegression",
+    "penalty": "l2",
+    "solver": "lbfgs",
+    "max_iter": 2000,
+    "C_grid": [0.1, 1.0, 10.0],
+    "class_weight_grid": [null, "balanced"]
+  },
+  "selection": {
+    "primary_metric": "f1_churn",
+    "tie_tolerance": 1e-6,
+    "tie_breakers": ["mean_recall_churn_desc", "C_asc", "class_weight_none_first"]
+  },
+  "classification_threshold": 0.5,
+  "positive_label": 1,
+  "tenure_bins": [-1, 12, 24, 48, 1000000],
+  "tenure_labels": ["0–12 tháng", "13–24 tháng", "25–48 tháng", ">48 tháng"]
+}

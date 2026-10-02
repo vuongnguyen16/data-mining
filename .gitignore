@@ -1,0 +1,31 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local datasets and generated results
+/Dataset/
+/telco_churn_lr/data/raw/
+/telco_churn_lr/results/
+/telco_churn_lr/exports/
+/telco_churn_lr/reports/report.md
+/telco_churn_lr/reports/verification.md
+
+# Local secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
